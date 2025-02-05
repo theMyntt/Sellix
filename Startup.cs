@@ -50,6 +50,8 @@ namespace Sellix
 			services.AddScoped<IUserRepository, UserRepository>();
 			services.AddScoped<IUserService, UserService>();
 
+			services.AddScoped<IClientRepository, ClientRepository>();
+
 			return services;
 		}
 
