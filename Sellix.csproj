@@ -35,7 +35,6 @@
     <None Remove="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
     <Folder Include="Entities\Enums\" />
     <Folder Include="Helpers\" />
