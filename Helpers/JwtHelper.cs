@@ -26,7 +26,7 @@ namespace Sellix.Helpers
 			var claims = new[]
 			{
 				new Claim(ClaimTypes.Name, user.Name),
-				new Claim(ClaimTypes.Role, nameof(user.Role))
+				new Claim(ClaimTypes.Role, user.Role.ToString())
 			};
 
 			var token = new JwtSecurityToken(
