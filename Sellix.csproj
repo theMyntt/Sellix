@@ -17,6 +17,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.20" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +30,8 @@
     <None Remove="Abstractions\" />
     <None Remove="Exceptions\" />
     <None Remove="Repositories\" />
+    <None Remove="Services\" />
+    <None Remove="DTOs\Response\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -40,6 +43,8 @@
     <Folder Include="Abstractions\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTOs\Response\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
