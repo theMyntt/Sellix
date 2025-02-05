@@ -26,6 +26,9 @@
     <None Remove="DTOs\" />
     <None Remove="Helpers\" />
     <None Remove="Context\" />
+    <None Remove="Abstractions\" />
+    <None Remove="Repository\" />
+    <None Remove="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -34,6 +37,9 @@
     <Folder Include="DTOs\" />
     <Folder Include="Helpers\" />
     <Folder Include="Context\" />
+    <Folder Include="Abstractions\" />
+    <Folder Include="Repository\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
