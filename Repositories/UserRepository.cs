@@ -38,7 +38,7 @@ namespace Sellix.Repositories
 			if (user == null)
 				throw new NotFoundException("Email/Password incorrect.");
 
-			var isSamePassword = PasswordHelper.AssertEqual(email, new PasswordHelperDTO
+			var isSamePassword = PasswordHelper.AssertEqual(password, new PasswordHelperDTO
 			{
 				Hash = user.PasswordHash,
 				Salt = user.PasswordSalt

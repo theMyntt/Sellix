@@ -24,7 +24,7 @@ namespace Sellix.Helpers
 
 			var computedHash = Convert.ToBase64String(hmac.ComputeHash(Encoding.UTF8.GetBytes(password)));
 
-			return computedHash == password;
+			return computedHash == dto.Hash;
 		}
 	}
 }
