@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Sellix.Abstractions;
 using Sellix.Context;
+using Sellix.Helpers;
 using Sellix.Repositories;
 
 namespace Sellix
@@ -43,6 +44,7 @@ namespace Sellix
 				options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 			});
 
+			services.AddSingleton<IJwtHelper, JwtHelper>();
 			services.AddScoped<IUserRepository, UserRepository>();
 
 			return services;
