@@ -16,6 +16,7 @@ namespace Sellix.Entities
 
 		[Column("Salt")]
 		public string PasswordSalt { get; set; } = string.Empty;
+		public bool IsBlocked { get; set; }
 		public UserRole Role { get; set; }
 	}
 }
