@@ -23,6 +23,11 @@ namespace Sellix.Controllers
 
 			return StatusCode(result.StatusCode, result);
 		}
+
+		public async Task<IActionResult> InsertAsync(NewUserDTO dto)
+		{
+
+		}
 	}
 }
 
