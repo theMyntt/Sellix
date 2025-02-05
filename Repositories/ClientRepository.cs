@@ -91,7 +91,7 @@ namespace Sellix.Repositories
 
 		public async Task UpdateAsync(ClientEntity entity)
 		{
-			var client = await _context.Clients.FirstOrDefaultAsync(c => c.Email == entity.Email);
+			var client = await _context.Clients.FirstOrDefaultAsync(c => c.Id == entity.Id);
 
 			if (client == null)
 				throw new NotFoundException("Client not exists.");
