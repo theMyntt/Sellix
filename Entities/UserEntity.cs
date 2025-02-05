@@ -1,5 +1,7 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 using Sellix.Entities.Enums;
 
 namespace Sellix.Entities
@@ -7,6 +9,7 @@ namespace Sellix.Entities
 	[Table("Users")]
 	public class UserEntity
 	{
+		[Key]
 		public Guid Id { get; set; }
 		public string Name { get; set; } = string.Empty;
 		public string Email { get; set; } = string.Empty;
