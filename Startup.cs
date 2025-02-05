@@ -1,6 +1,8 @@
 using System;
 using Microsoft.EntityFrameworkCore;
+using Sellix.Abstractions;
 using Sellix.Context;
+using Sellix.Repositories;
 
 namespace Sellix
 {
@@ -14,6 +16,8 @@ namespace Sellix
 			{
 				options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 			});
+
+			services.AddScoped<IUserRepository, UserRepository>();
 
 			return services;
 		}
