@@ -20,6 +20,12 @@ namespace Sellix.Repositories
 
 		public async Task InsertAsync(UserEntity entity)
 		{
+			var userExists = await _context.Users
+				.FirstOrDefaultAsync(u => u.Email == entity.Email);
+
+			if (userExists != null)
+				throw new ConflictException("User already exists");
+
 			await _context.Users.AddAsync(entity);
 			await _context.SaveChangesAsync();
 		}
