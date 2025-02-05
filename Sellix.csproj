@@ -27,8 +27,8 @@
     <None Remove="Helpers\" />
     <None Remove="Context\" />
     <None Remove="Abstractions\" />
-    <None Remove="Repository\" />
     <None Remove="Exceptions\" />
+    <None Remove="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -38,8 +38,8 @@
     <Folder Include="Helpers\" />
     <Folder Include="Context\" />
     <Folder Include="Abstractions\" />
-    <Folder Include="Repository\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">

@@ -7,7 +7,7 @@ using Sellix.Entities;
 using Sellix.Exceptions;
 using Sellix.Helpers;
 
-namespace Sellix.Repository
+namespace Sellix.Repositories
 {
 	public class UserRepository : IUserRepository
 	{
