@@ -38,14 +38,10 @@
     <Folder Include="Controllers\" />
     <Folder Include="Entities\" />
     <Folder Include="Entities\Enums\" />
-    <Folder Include="DTOs\" />
     <Folder Include="Helpers\" />
     <Folder Include="Context\" />
-    <Folder Include="Abstractions\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Repositories\" />
     <Folder Include="Services\" />
-    <Folder Include="DTOs\Response\" />
     <Folder Include="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
