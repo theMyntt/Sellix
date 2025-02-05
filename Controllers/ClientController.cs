@@ -54,7 +54,7 @@ namespace Sellix.Controllers
 			return StatusCode(200, result);
 		}
 
-		[HttpGet("v1/client")]
+		[HttpGet("v2/client")]
 		[Authorize]
 		public async Task<IActionResult> FindAsync(string q, int page, int limit)
 		{
