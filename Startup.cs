@@ -8,7 +8,7 @@ namespace Sellix
 	{
 		public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
 		{
-			var connectionString = configuration["MsSql:ConnectionString"] ?? throw new Exception("MsSql:ConnectionString Is Null");
+			var connectionString = configuration["MySql:ConnectionString"] ?? throw new Exception("MySql:ConnectionString Is Null");
 
 			services.AddDbContext<DatabaseContext>(options =>
 			{
