@@ -18,6 +18,7 @@ namespace Sellix.Controllers
 		}
 
 		[HttpPost("v1/login")]
+		[Tags("Auth")]
 		public async Task<IActionResult> LoginAsync(LoginDTO dto)
 		{
 			var result = await _service.LoginAsync(dto.Email, dto.Password);
