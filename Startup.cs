@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using Sellix.Abstractions;
 using Sellix.Context;
 using Sellix.Helpers;
+using Sellix.Middlewares;
 using Sellix.Repositories;
 using Sellix.Services;
 
@@ -54,6 +55,8 @@ namespace Sellix
 
 		public static IApplicationBuilder UseServices(this IApplicationBuilder app)
 		{
+			app.UseMiddleware<ExceptionMiddleware>();
+
 			app.UseAuthentication();
 			app.UseAuthorization();
 

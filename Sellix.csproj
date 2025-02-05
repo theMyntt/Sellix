@@ -32,6 +32,7 @@
     <None Remove="Repositories\" />
     <None Remove="Services\" />
     <None Remove="DTOs\Response\" />
+    <None Remove="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -45,6 +46,7 @@
     <Folder Include="Repositories\" />
     <Folder Include="Services\" />
     <Folder Include="DTOs\Response\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="Properties\launchSettings.json">
