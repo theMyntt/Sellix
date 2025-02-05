@@ -7,6 +7,7 @@ using Sellix.Abstractions;
 using Sellix.Context;
 using Sellix.Helpers;
 using Sellix.Repositories;
+using Sellix.Services;
 
 namespace Sellix
 {
@@ -46,6 +47,7 @@ namespace Sellix
 
 			services.AddSingleton<IJwtHelper, JwtHelper>();
 			services.AddScoped<IUserRepository, UserRepository>();
+			services.AddScoped<IUserService, UserService>();
 
 			return services;
 		}
