@@ -7,6 +7,7 @@ namespace Sellix.Controllers
 {
 	[ApiController]
 	[Route("/api/")]
+	[Tags("User")]
 	public class UserController : ControllerBase
 	{
 		private readonly IUserService _service;
