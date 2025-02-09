@@ -47,11 +47,14 @@ namespace Sellix
 			});
 
 			services.AddSingleton<IJwtHelper, JwtHelper>();
+
 			services.AddScoped<IUserRepository, UserRepository>();
 			services.AddScoped<IUserService, UserService>();
 
 			services.AddScoped<IClientRepository, ClientRepository>();
 			services.AddScoped<IClientService, ClientService>();
+
+			services.AddScoped<ISaleRepository, SaleRepository>();
 
 			return services;
 		}
